@@ -2,8 +2,9 @@
 some power considerations for building a chess board like our Youtube videos  
 https://www.youtube.com/@builtclever
 <hr>
-I used AI to help figure this out, so please double-check everything for yourself, information is provided at your own risk.
-
+I used AI to help figure this out, so please double-check everything for yourself,  
+<br />information is provided as is use it at your own risk.
+<br /><br />
 to check the current needed for choosing a power supply
 
 🔧 Highly Recommended Tips:
@@ -17,7 +18,8 @@ to check the current needed for choosing a power supply
   - USB 3.0: 0.9 A
   - USB-C: 3.0 A
 <br/>
-We used the WS2812B 5050 RGB LED Strip (30 LEDs/m, 5V, individually addressable). Ours is a 5-meter strip → 30 × 5 = 150 LEDs
+We used the WS2812B 5050 RGB LED Strip (30 LEDs/m, 5V, individually addressable).
+Ours is a 5-meter strip → 30 × 5 = 150 LEDs
 
 🔋 LED Power Draw:
 * Max draw per LED: 60 mA (full white)
@@ -30,7 +32,8 @@ If you light 64 LEDs at full white:
 Mixed colors: 
 → 64 × 30 mA ≈ 1.92 A
 <hr>
-We use a 2A 5V phone charger for our board with 1 LED per square.
+We sometimes use a 2A 5V phone charger for our board with 1 LED per square.
+A portable power bank is also a good option—they’re often more forgiving. Just check the specs first; ours handles 2.1–2.4 A peak.
 
 At most, we show:
 * All valid moves for a piece
@@ -63,9 +66,10 @@ Using my rules above 540 mA × 4 = 2.16 A
 At full white brightness: → 64 × 4 × 60 mA = 15.36 A, just for the LEDs!    
 
 When we also use the motors to try and move the pieces with magnets  
-NEMA 17 can be approx (1.2A to 2A peak) x 3 = max 6A  
-so we used a computer power supply rated for 20A to be over confident  
-also has the benifit of have 12v and 5v power lines  
+NEMA 17 plus motor drivers can be approx (1.2A to 2A peak) x 3 = max 6A  
+so we used a computer power supply rated for 20A to power everything and be over confident  
+a computer power supply also has the benifit of have 12v and 5v power lines  
+A AC 240V To DC 12V 10A/20A/30A Power Supply Adapter would be a good fit as well
 
 please double check all this yourself, 
 AI is a great help with it but best to be sure
