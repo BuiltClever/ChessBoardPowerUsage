@@ -56,10 +56,10 @@ Also include
 
 🔋 Power Breakdown:  
 > LED ring: 12 × 45 mA = 540 mA  
-> Board LEDs: 28 × 40 mA = 1120 mA  
+> Board LEDs: 28 + 2 × 40 mA = 1200 mA  
 > Hall sensors: 8 × 4 mA = 32 mA  
-> Arduino Nano: 30–60 mA 
-> Total: 1,752ma  1.7 A
+> Arduino Nano: 30–60 mA  
+> Total: 1,832ma  1.83 A  
 > Leaves a bit of headroom for color variations or brief spikes.  
 <br />
 
@@ -68,14 +68,14 @@ Also include
 > At full white brightness: → 64 × 4 × 60 mA = 15.36 A, just for the LEDs!    
 <br />
 
-⚙️ When we also use the motors to try and move the pieces with magnets  
+⚙️ We sometimes use the motors to move the pieces with magnets (still a work inprogress)   
 > NEMA 17 plus motor drivers can be approx (1.2A to 2A peak) x 3 = max 6A  
 
 recommendation
 ----
-✅  so we used a computer power supply rated for 20A to power everything and be over confident.  
+✅  when using the motors, or if we want more LEDs to light at once, we used a computer power supply rated for 20A to power everything and be over confident.  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a computer power supply also has the benifit of having 12v and 5v power lines.  
-✅ A AC 240V To DC 12V 10A/20A/30A Power Supply Adapter would be a good fit as well  
+✅ An AC 240V To DC 12V 10A/20A/30A Power Supply Adapter would be a good fit as well  
 ✅ or if you are just using the LEDs and follow the above rules carefully a 5v 2A phone charger or power bank can be used.
 
 please double check all this yourself, 
